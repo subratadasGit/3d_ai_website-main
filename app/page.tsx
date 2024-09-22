@@ -42,7 +42,7 @@ export default function Home() {
           />
         </div>
       </header>
-      <MarqueeDemo />{/* Corrected component usage */}
+      <MarqueeDemo /> {/* Corrected component usage */}
     </main>
   );
 }
