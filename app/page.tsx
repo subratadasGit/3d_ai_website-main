@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Navbar from './ui/Navbar';
 import MarqueeDemo from '../components/MarqueeDemo';
 import { AnimatedTooltip } from '@/components/ui/animated-tooltip';
+import Footer from '@/app/ui/Footer'; // Corrected import statement
 
 const items = [
   {
@@ -21,6 +22,7 @@ const items = [
   },
   // Add more items as needed
 ];
+
 export default function Home() {
   return (
     <main className="flex min-h-screen h-fit flex-col items-center justify-center relative">
@@ -56,10 +58,11 @@ export default function Home() {
           />
         </div>
       </header>
-      <MarqueeDemo /> {/* Corrected component usage */}
+      <MarqueeDemo />
       <div className="flex space-x-4">
-      <AnimatedTooltip items={items} />
-    </div>{/* Moved inside main */}
+        <AnimatedTooltip items={items} />
+      </div>
+      <Footer />
     </main>
   );
 }
