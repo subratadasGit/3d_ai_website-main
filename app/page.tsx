@@ -25,6 +25,7 @@ const items = [
 
 export default function Home() {
   return (
+    <div className="">
     <main className="flex min-h-screen h-fit flex-col items-center justify-center relative">
       <Navbar />
       <header
@@ -58,11 +59,16 @@ export default function Home() {
           />
         </div>
       </header>
-      <MarqueeDemo />
       <div className="flex space-x-4">
         <AnimatedTooltip items={items} />
+        <br />
+        <br />
       </div>
-      <Footer />
+      <MarqueeDemo />
+
     </main>
+    
+    <Footer />
+    </div>
   );
 }
