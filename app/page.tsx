@@ -59,13 +59,12 @@ export default function Home() {
           />
         </div>
       </header>
-      <div className="flex space-x-4">
-        <AnimatedTooltip items={items} />
-        <br />
-        <br />
-      </div>
+    
       <MarqueeDemo />
-
+      <div className="flex space-x-8  mb-8 mt-8">
+        <AnimatedTooltip items={items} />
+      
+      </div>
     </main>
     
     <Footer />
